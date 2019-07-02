@@ -1,0 +1,257 @@
+body {
+	margin: 0;
+}
+
+.menu {
+	background-color: white;
+	font-family: helvetica;
+	font-size: 1.3em;
+	font-weight: 300;
+	padding-top: -2%;
+	padding-bottom: 3%;
+	top: 0;
+	width: 100%;
+}
+
+.navigation {
+	color: #444545;
+	font-family: helvetica;
+	text-decoration: none;
+}
+
+li {
+	display: inline;
+	float: right;
+	padding-right: 2%;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	background-image: url("./images/cover-carrying-sticks.jpeg");
+	background-size: cover;
+	opacity: 0.9;
+	background-position: center;
+	position: relative;
+	width: 100%;
+	height: 80vh;
+}
+
+.header > div {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+h1 {
+	font-family: helvetica;
+	font-weight: 300;
+	font-size: 3.2em;
+	color: white;
+	opacity: 1.0 !important;
+	margin-bottom: -1%;
+
+}
+
+h3 {
+	font-family: helvetica;
+	font-weight: 200;
+	font-size: 1.3em;
+	color: #DFF6EE;
+	margin-bottom: 5%;
+
+}
+
+.button {
+	background-color: #23C9AE;
+	color: white;
+	padding: 2vh 5vh;
+	text-align: center;
+	text-decoration: none;
+	font-family: helvetica;
+	font-size: 1em;
+	border: none;
+	border-radius: 3vh;
+	cursor: pointer;
+	margin-top: -2vh;
+
+}
+
+.title {
+	font-family: helvetica;
+	font-weight: 200;
+	font-size: 2.2em;
+	color: #444545;
+	margin-top: 3vh;
+	margin-bottom: 2vh;
+	width: 100%;
+	text-align: center;
+}
+
+.center {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 1em;
+}
+.center img {
+	width: 100%;
+}
+
+.product-section {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 0.5em;
+}
+
+.product-section img {
+	width: 100%;
+}
+
+.product-columns {
+	text-align: left;
+	margin-bottom: 2vh;
+}
+
+
+.product-title {
+	font-family: helvetica;
+	font-weight: bold;
+	color: #4A4A4A;
+	font-size: 0.7em;
+	text-align: left;
+}
+
+.product-description {
+	font-family: helvetica;
+	color: #7E7E7E;
+	font-size: 0.7em;
+	text-align: left;
+}
+
+.product-price {
+	font-family: helvetica;
+	font-style: italic;
+	color: #04B990;
+	font-size: 0.7em;
+	text-align: left;
+}
+
+.team {
+	filter: grayscale(100%);
+	border-radius: 50%;
+	object-fit: cover;
+	position: relative;
+	width: 35vh;
+	height: 35vh;
+	overflow: hidden;
+}
+
+.team img {
+	width: 100%;
+}
+
+.team-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 0.1em;
+}
+
+.team-section {
+	float: left;
+	text-align: center;
+	font-family: helvetica;
+	color: #04B990;
+	font-weight: 200;
+
+}
+
+.map-wrapper {
+	width: 100%;
+	height: auto;
+	margin-bottom: 2%;
+}
+
+.contactus {
+	font-family: helvetica;
+	color: #4A4A4A;
+	font-size: 1em;
+	font-weight: 250;
+	text-align: justify;
+	float: right;
+	padding-right: 4%;
+	vertical-align: middle;
+	padding-top: 7%;
+}
+
+footer {
+	text-align: center;
+	font-family: helvetica;
+	font-size: 1em;
+	margin-bottom: 2%;
+
+}
+
+footer hr {
+	width: 99%;
+	padding-left: 0;
+}
+
+hr {
+	width: 10%;
+	padding-left: 17%;
+	margin-bottom: 3%;
+}
+
+/* tablets css*/
+@media screen and (max-width: 800px){
+.center {
+	grid-template-columns: 1fr 1fr;
+	}
+
+.product-section {
+	grid-template-columns: 1fr 1fr;
+	}	
+.map-wrapper iframe {
+	width: 100%;
+	height: 25%;
+	}	
+.contactus {
+	float: center;
+	padding-right: 10%;
+	}
+h1 {
+	font-size: 3em;
+	}	
+h3 {
+	font-size: 1.1em;
+	}
+}
+
+/* mobile css*/
+@media screen and (max-width: 460px){
+.center {
+	grid-template-columns: 1fr;
+	}
+.product-section {
+	grid-template-columns: 1fr;
+	}
+.team-wrapper {
+	grid-template-columns: 1fr;
+	}	
+.map-wrapper iframe {
+	width: 100%;
+	height: 25%;
+	}	
+.contactus {
+	margin-left: 3%;
+	}	
+h1 {
+	font-weight: 400;
+	}	
+h3 {
+	font-weight: 330;
+	color: white;
+	padding: 2vh 6vh 2vh 3vh;
+	}		
+}
